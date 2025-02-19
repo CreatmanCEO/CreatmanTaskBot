@@ -1,0 +1,83 @@
+# Конфиденциальные данные
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets/
+.secrets.baseline
+.secret*
+*.secret*
+*secret*
+*password*
+*token*
+*api_key*
+*apikey*
+*credential*
+
+# История Git и бэкапы
+.git-old/
+*.bak
+backup*/
+temp*/
+tmp*/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Виртуальное окружение
+venv/
+ENV/
+.env/
+.venv/
+env/
+virtualenv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.bak
+*.sublime*
+.project
+.pydevproject
+.settings/
+
+# Логи и данные
+logs/
+*.log
+log/
+data/
+*.dat
+*.db
+*.sqlite3
+*.sqlite
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*~
+.directory 

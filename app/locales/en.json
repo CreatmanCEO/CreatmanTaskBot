@@ -1,0 +1,28 @@
+{
+    "welcome_message": "Welcome to CreatmanTaskBot! Choose your interface language using /language command",
+    "welcome_back": "Welcome back! Use /help to see available commands.",
+    "language_changed": "Interface language changed to English",
+    "task_created": "Task '{task_name}' successfully created",
+    "task_updated": "Task '{task_name}' updated",
+    "task_deleted": "Task '{task_name}' deleted",
+    "error_task_not_found": "Task not found",
+    "error_invalid_input": "Invalid input format",
+    "error_permission_denied": "Insufficient permissions to perform this operation",
+    "help_message": "Available commands:\n/start - Start bot\n/help - Show this message\n/language - Change language\n/settings - Settings\n/change_token - Change Trello token",
+    "settings_message": "Bot settings:\n- Language: {language}\n- Notifications: {notifications}\n- Timezone: {timezone}",
+    "confirm_action": "Are you sure you want to {action}?",
+    "yes": "Yes",
+    "no": "No",
+    "cancel": "Cancel",
+    "operation_cancelled": "Operation cancelled",
+    "operation_completed": "Operation completed successfully",
+    
+    "trello_token_request": "To work with the bot, you need to get a Trello API token. Follow these steps:\n\n1. Go to: https://trello.com/app-key\n2. Log in to your Trello account\n3. Click \"Generate a Token\"\n4. Copy the token and send it to me\n\nSend the token in the next message.",
+    "trello_token_invalid_format": "❌ Invalid token format. The token should be 64 characters long (numbers and letters a-f). Please check the token and send it again.",
+    "trello_token_invalid": "❌ Invalid token. Please make sure you copied the token correctly and send it again.",
+    "trello_token_verified": "✅ Token verified. Please enter the email used for Trello registration:",
+    "email_mismatch": "❌ Email doesn't match the one in your Trello profile. Please check the email and send it again.",
+    "authorization_error": "❌ An error occurred. Please start over with /start",
+    "authorization_completed": "🎉 Congratulations! Authorization completed successfully. Now you can use all bot features.\n\nUse /help to see available commands.",
+    "save_error": "❌ An error occurred while saving data. Please try again later."
+} 

@@ -1,0 +1,41 @@
+services:
+  - type: web
+    name: creatman-task-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python run.py
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: APP_URL
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_ANON_KEY
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: TRELLO_API_KEY
+        sync: false
+      - key: TRELLO_API_TOKEN
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: SECRET_KEY
+        sync: false
+      - key: LOG_LEVEL
+        value: INFO
+      - key: TIMEZONE
+        value: UTC
+      - key: DEFAULT_LANGUAGE
+        value: ru
+      - key: DEBUG
+        value: false 
