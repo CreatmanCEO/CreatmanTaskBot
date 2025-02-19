@@ -12,32 +12,35 @@ class Settings(BaseSettings):
     APP_NAME: str = "CreatmanTaskBot"
     APP_VERSION: str = "1.0.0"
     DEBUG: bool = False
-    APP_URL: str
+    APP_URL: Optional[str] = None
     LOG_LEVEL: str = "INFO"
     TIMEZONE: str = "UTC"
     DEFAULT_LANGUAGE: str = "ru"
     
     # Настройки Supabase
-    SUPABASE_URL: str
-    SUPABASE_ANON_KEY: str
-    SUPABASE_SERVICE_ROLE: str
-    JWT_SECRET: str
+    SUPABASE_URL: Optional[str] = None
+    SUPABASE_ANON_KEY: Optional[str] = None
+    SUPABASE_SERVICE_ROLE: Optional[str] = None
+    JWT_SECRET: Optional[str] = None
     
     # Настройки Telegram
     TELEGRAM_BOT_TOKEN: str
     TELEGRAM_WEBHOOK_URL: Optional[str] = None
     
     # Настройки OpenAI
-    OPENAI_API_KEY: str
+    OPENAI_API_KEY: Optional[str] = None
     
     # База данных
-    DATABASE_URL: str
+    DATABASE_URL: str = "sqlite:///./app.db"  # SQLite по умолчанию
     
     # Redis
-    REDIS_URL: str
+    REDIS_URL: Optional[str] = None
     
     # CORS
     BACKEND_CORS_ORIGINS: List[str] = []
+    
+    # Безопасность
+    SECRET_KEY: str = secrets.token_urlsafe(32)
     
     @property
     def current_time(self) -> datetime:

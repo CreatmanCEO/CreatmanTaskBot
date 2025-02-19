@@ -9,28 +9,38 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.0
-      - key: APP_URL
-        sync: false
-      - key: SUPABASE_URL
-        sync: false
-      - key: SUPABASE_ANON_KEY
-        sync: false
-      - key: SUPABASE_SERVICE_ROLE
-        sync: false
-      - key: JWT_SECRET
-        sync: false
       - key: TELEGRAM_BOT_TOKEN
-        sync: false
-      - key: OPENAI_API_KEY
-        sync: false
-      - key: TRELLO_API_KEY
-        sync: false
-      - key: TRELLO_API_TOKEN
         sync: false
       - key: DATABASE_URL
         sync: false
-      - key: SECRET_KEY
+      # Опциональные переменные
+      - key: APP_URL
         sync: false
+        optional: true
+      - key: SUPABASE_URL
+        sync: false
+        optional: true
+      - key: SUPABASE_ANON_KEY
+        sync: false
+        optional: true
+      - key: SUPABASE_SERVICE_ROLE
+        sync: false
+        optional: true
+      - key: JWT_SECRET
+        sync: false
+        optional: true
+      - key: OPENAI_API_KEY
+        sync: false
+        optional: true
+      - key: TRELLO_API_KEY
+        sync: false
+        optional: true
+      - key: TRELLO_API_TOKEN
+        sync: false
+        optional: true
+      - key: REDIS_URL
+        sync: false
+        optional: true
       - key: LOG_LEVEL
         value: INFO
       - key: TIMEZONE
