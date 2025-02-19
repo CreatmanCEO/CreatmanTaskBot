@@ -49,10 +49,11 @@ python run.py
 - `/language` - Change interface language
 
 ### Development
-- Python 3.8+
+- Python 3.11+
 - FastAPI for API endpoints
 - SQLAlchemy for database management
 - Alembic for migrations
+- Pydantic with pydantic-settings for configuration management
 
 ### Deployment
 The project is configured for deployment on render.com:
@@ -113,10 +114,11 @@ python run.py
 - `/language` - Изменить язык интерфейса
 
 ### Разработка
-- Python 3.8+
+- Python 3.11+
 - FastAPI для API эндпоинтов
 - SQLAlchemy для работы с базой данных
 - Alembic для миграций
+- Pydantic с pydantic-settings для управления конфигурацией
 
 ### Развертывание
 Проект настроен для развертывания на render.com:
