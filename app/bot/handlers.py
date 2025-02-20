@@ -458,7 +458,7 @@ async def handle_boards(message):
                 reply_text += f"_{board['desc']}_\n"
             
             lists_count = len(board.get('lists', []))
-            cards_count = sum(len(lst.get('cards', [])) for lst in board.get('lists', [])
+            cards_count = sum(len(lst.get('cards', [])) for lst in board.get('lists', []))
             
             reply_text += f"📑 Списков: {lists_count}\n"
             reply_text += f"📌 Задач: {cards_count}\n"
