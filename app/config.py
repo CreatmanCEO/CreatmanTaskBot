@@ -31,7 +31,7 @@ class Settings(BaseSettings):
     OPENAI_API_KEY: Optional[str] = None
     
     # Настройки Trello
-    TRELLO_API_KEY: str  # Обязательное поле
+    TRELLO_API_KEY: Optional[str] = None  # Теперь опциональное поле
     TRELLO_TOKEN: Optional[str] = None  # Токен будет передаваться пользователем через бота
     
     # CORS

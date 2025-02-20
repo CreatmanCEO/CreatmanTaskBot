@@ -12,9 +12,10 @@ services:
       # Обязательные переменные
       - key: TELEGRAM_BOT_TOKEN
         sync: false
+      # Опциональные переменные
       - key: TRELLO_API_KEY
         sync: false
-      # Опциональные переменные
+        optional: true
       - key: APP_URL
         sync: false
         optional: true
