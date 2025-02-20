@@ -33,7 +33,7 @@ trello_client = TrelloClient()
 ai_processor = AIProcessor()
 
 # Создаем бота
-bot = Bot(token=settings.TELEGRAM_TOKEN)
+bot = Bot(token=settings.TELEGRAM_BOT_TOKEN)
 
 # Клавиатура для основного меню
 def get_main_keyboard():
@@ -602,7 +602,7 @@ async def handle_help(message):
 # Основной обработчик webhook
 @router.post("/{token}")
 async def telegram_webhook(token: str, request: Request):
-    if token != settings.TELEGRAM_TOKEN:
+    if token != settings.TELEGRAM_BOT_TOKEN:
         return {"error": "Invalid token"}
     
     try:
