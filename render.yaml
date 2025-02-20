@@ -9,7 +9,14 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: 3.9.0
+      # Обязательные переменные
       - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TRELLO_API_KEY
+        sync: false
+      - key: TRELLO_TOKEN
+        sync: false
+      - key: REDIS_URL
         sync: false
       # Опциональные переменные
       - key: APP_URL
@@ -30,9 +37,6 @@ services:
       - key: OPENAI_API_KEY
         sync: false
         optional: true
-      - key: REDIS_URL
-        sync: false
-        optional: true
       - key: LOG_LEVEL
         value: INFO
       - key: TIMEZONE
@@ -40,4 +44,6 @@ services:
       - key: DEFAULT_LANGUAGE
         value: ru
       - key: DEBUG
-        value: false 
+        value: false
+      - key: SECRET_KEY
+        sync: false 
