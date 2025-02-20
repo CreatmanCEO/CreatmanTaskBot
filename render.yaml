@@ -14,8 +14,6 @@ services:
         sync: false
       - key: TRELLO_API_KEY
         sync: false
-      - key: TRELLO_TOKEN
-        sync: false
       # Опциональные переменные
       - key: APP_URL
         sync: false
