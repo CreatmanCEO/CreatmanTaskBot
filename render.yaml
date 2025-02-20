@@ -16,8 +16,6 @@ services:
         sync: false
       - key: TRELLO_TOKEN
         sync: false
-      - key: REDIS_URL
-        sync: false
       # Опциональные переменные
       - key: APP_URL
         sync: false

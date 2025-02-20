@@ -30,9 +30,6 @@ class Settings(BaseSettings):
     # Настройки OpenAI
     OPENAI_API_KEY: Optional[str] = None
     
-    # Redis для кэширования
-    REDIS_URL: Optional[str] = None
-    
     # CORS
     BACKEND_CORS_ORIGINS: List[str] = []
     
