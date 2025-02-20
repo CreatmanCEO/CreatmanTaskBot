@@ -8,27 +8,23 @@ services:
     autoDeploy: true
     envVars:
       - key: PYTHON_VERSION
-        value: 3.9.0
+        value: 3.11.0
       # Обязательные переменные
       - key: TELEGRAM_BOT_TOKEN
         sync: false
+      - key: SUPABASE_URL
+        value: https://fusfmhyyftpnmcbiwlam.supabase.co
+      - key: SUPABASE_ANON_KEY
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ1c2ZtaHl5ZnRwbm1jYml3bGFtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzk5OTI3MjIsImV4cCI6MjA1NTU2ODcyMn0.1ltsUjKSd_iU6OCWeT4VS8V5Y5W5260ogLaOVeaCyw8
+      - key: SUPABASE_SERVICE_ROLE
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ1c2ZtaHl5ZnRwbm1jYml3bGFtIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTczOTk5MjcyMiwiZXhwIjoyMDU1NTY4NzIyfQ.4yPMBWJIuYcF6uk6Vm9PjvPGBVko1mgbfFW_Ei6y_Iw
+      - key: JWT_SECRET
+        value: 8eyKd7RIx30KKs00bp6pwclZvV9svXtxiYNE+nBRuLcx7Sj6JASg2A9WsV9CJq7Vfug6iKSwoXoNnXh4F0O6zw==
       # Опциональные переменные
       - key: TRELLO_API_KEY
         sync: false
         optional: true
       - key: APP_URL
-        sync: false
-        optional: true
-      - key: SUPABASE_URL
-        sync: false
-        optional: true
-      - key: SUPABASE_ANON_KEY
-        sync: false
-        optional: true
-      - key: SUPABASE_SERVICE_ROLE
-        sync: false
-        optional: true
-      - key: JWT_SECRET
         sync: false
         optional: true
       - key: OPENAI_API_KEY
