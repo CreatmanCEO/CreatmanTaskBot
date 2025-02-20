@@ -30,10 +30,7 @@ class Settings(BaseSettings):
     # Настройки OpenAI
     OPENAI_API_KEY: Optional[str] = None
     
-    # База данных
-    DATABASE_URL: str = "sqlite:///./app.db"  # SQLite по умолчанию
-    
-    # Redis
+    # Redis для кэширования
     REDIS_URL: Optional[str] = None
     
     # CORS

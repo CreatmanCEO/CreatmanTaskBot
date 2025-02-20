@@ -11,8 +11,6 @@ services:
         value: 3.11.0
       - key: TELEGRAM_BOT_TOKEN
         sync: false
-      - key: DATABASE_URL
-        sync: false
       # Опциональные переменные
       - key: APP_URL
         sync: false
@@ -30,12 +28,6 @@ services:
         sync: false
         optional: true
       - key: OPENAI_API_KEY
-        sync: false
-        optional: true
-      - key: TRELLO_API_KEY
-        sync: false
-        optional: true
-      - key: TRELLO_API_TOKEN
         sync: false
         optional: true
       - key: REDIS_URL
